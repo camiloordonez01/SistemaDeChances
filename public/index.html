@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Titulo de la barra de urls-->
+	<title>Panel De Control</title>
+	<!--Icono Principal de la barra de urls-->
+	<link rel="icon" type="image/png" href="Imagenes/paneldecontrol.png" />
+	
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!--Estilos css de el framework bootstrap-->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<!--Estilos css-->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<!--Fuente Principal-->
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<!--Fuentes Segundarias-->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+
+<body>
+	<!--Contenedor Principal-->
+	
+	<div class="container-fluid ">
+		<div class="row ">
+			<!--menu lateral-->
+			<div class="col-md-* col-sm-* col-xs-* ">
+				<header class="text-center letra-oswald">
+					<div class="menu_bar">
+						<a href="#" class="bt-menu"><span class="icon-menu"></span>Menú</a>
+					</div>
+					<nav>
+						<ul>
+							<li onmouseover="punteroVisible(1)" onmouseout="punteroNovisible(1)">
+								<a href="#">
+									<div id="puntero1" class="triangulo"></div>
+									<span class="icon-dice"></span>
+									Chance
+								</a>
+							</li>
+
+							<li onmouseover="punteroVisible(2)" onmouseout="punteroNovisible(2)">
+								<a href="#">
+									<div id="puntero2" class="triangulo"></div>
+									<span class="icon-calendar"></span>
+									Calendario
+								</a>
+							</li>
+
+							<li onmouseover="punteroVisible(3)" onmouseout="punteroNovisible(3)">
+								<a href="#">
+									<div id="puntero3" class="triangulo"></div>
+									<span class="icon-coin-dollar"></span>
+									Reportes
+								</a>
+							</li>
+
+							<li onmouseover="punteroVisible(4)" onmouseout="punteroNovisible(4)">
+								<a href="#">
+									<div id="puntero4" class="triangulo"></div>
+									<span class="icon-cog"></span>
+									Configuracion
+								</a>
+							</li>
+
+							<li onmouseover="punteroVisible(5)" onmouseout="punteroNovisible(5)">
+								<a href="#">
+									<div id="puntero5" class="triangulo"></div>
+									<span class="icon-switch"></span>
+									Cerrar Sesion
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+			<!--Cuerpo Contenido-->
+			<div class="col-md col-sm-* col-xs-* color-fondocuerpo">
+				<!--Titulo Hoja principal-->
+				<h1 class="letra-oswald texto-bienvenido">Bienvenido(a),<br> Mr jane <br><div class="hora">7 De Enero De 2018 01:32 PM</div></h1>
+				<!--Elemento Notificaciones-->
+				<div class="notificaciones">
+					<nav>
+						<ul>
+							<li>
+								<a href="#">
+									<span class="icon-bubble"></span>
+									<div class="circulo"><p class="numero letra-releway">1</p></div>
+								</a>
+							</li>
+						</ul>
+						
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
